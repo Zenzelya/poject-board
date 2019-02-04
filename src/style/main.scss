@@ -266,10 +266,17 @@
   @include flex(column, start, stretch);
   width: 100%;
   overflow-y: scroll;
+  
+  &::-webkit-scrollbar {
+  	width: 7px;
+    
+  }
 
-  &::-webkit-scrollbar{
-    width: 6px;
-  };
+  &::-webkit-scrollbar-thumb{
+    height: 25px;
+    border-radius: 6px;
+    background-color: #ccc;	
+  }
 }
 
 .line-badge{
@@ -323,7 +330,16 @@
 .workers-list{
   @include flex(column, start, stretch);
   overflow-y: scroll;
-  
+  &::-webkit-scrollbar {
+  	width: 7px;
+    
+  }
+
+  &::-webkit-scrollbar-thumb{
+    height: 20px;
+    border-radius: 6px;
+    background-color: #ccc;	
+  }
 
 }
 
