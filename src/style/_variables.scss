@@ -1,0 +1,36 @@
+
+// Media variables
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+
+
+// Color variables
+$primery-red: rgb(255, 80, 63);
+$grey-241: rgb(241, 241, 241);
+$grey-197: rgb(197, 197, 197);
+$grey-173: rgb(173, 173, 173);
+$grey-120: rgb(120, 120, 120);
+$grey-101: rgb(101, 120, 120);
+$grey-103: rgb(103, 103, 103);
+$grey-89: rgba(89, 89, 89, 0.61);
+
+
+$dark : rgb( 76, 100, 116 );
+
+$light-green: rgb( 170, 204, 78);
+$ligtn-grey-gr: linear-gradient(97deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224) 99%);
+
+//Font var
+$montserrat_font : "Montserrat";
+$menu-font: "Open Sans";
+
+// Page var
+$main-font: $montserrat_font;
+
+$bg-color: $grey-241;
+$online-badge: $light-green;
+$active: $primery-red;
+
+

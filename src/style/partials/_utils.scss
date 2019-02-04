@@ -1,0 +1,50 @@
+@import "_variables";
+
+// Media-queries mixin. Mobile first method
+@mixin respond-to($media) {
+    @if $media == mobile {
+        @media (max-width: $tablet - 1) { @content; }
+    }
+    @else if $media == tablet {
+        @media (min-width: $tablet) { @content; }
+    }
+    @else if $media == desktop {
+        @media (min-width: $desktop) { @content; }
+    }
+}
+
+//
+@mixin desktop {
+    @include respond-to(desktop) {
+        @content
+            }
+    .old-ie & {
+        @content
+            }
+}
+
+// Background mixin
+@mixin background {
+    background: {
+        position: center center;
+        size: cover;
+    }
+}
+
+// Utility classes
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    margin: auto;
+}
+.container {
+    width: 320px;
+    margin: 0 auto;
+    @include respond-to(tablet) {
+        width: 768px;
+    }
+    @include desktop {
+        width: 960px;
+    }
+}

@@ -1,0 +1,117 @@
+.icon-meter:before {
+    content: "\e9a6";
+    font-size: 32px;
+    color: rgba(103, 103, 103, 0.61);
+  }
+
+  .icon-meter--select:before {
+    content: "\e9a6";
+    font-size: 32px;
+    color: $primery-red;
+  }
+
+.icon-list2:before {
+    content: "\e904";
+    font-size: 44px;
+    color: rgba(103, 103, 103, 0.61);
+  }
+
+  .icon-list2--select:before {
+    content: "\e904";
+    font-size: 32px;
+    color: $primery-red;
+  }
+
+  .icon-list2:before {
+    content: "\e904";
+    font-size: 32px;
+    color: rgba(103, 103, 103, 0.61);
+  }
+
+  .icon-cog2:before {
+   content: "\e994";
+   font-size: 32px;
+   color: rgba(103, 103, 103, 0.8);
+  }
+
+  .icon-cog2--select:before {
+   content: "\e994";
+   font-size: 32px;
+   color: $primery-red;
+  }
+
+   .icon-atom:before {
+    content: "\e912";
+    font-size: 32px;
+    color: rgba(103, 103, 103, 0.8);
+    
+  }
+
+ .icon-atom--select:before {
+    content: "\e912";
+    font-size: 32px;
+    color: $primery-red;
+  }
+
+  .icon-logout--select:before {
+    content: "\e901";
+    font-size: 32px;
+    color: $primery-red;
+  }
+
+.icon-reloud:before{
+  font-size: 20px;
+  content: "\ea42";
+  color: white;
+
+}
+
+.icon-arrow_down:before{
+  font-size: 20px;
+  content: "\e908";
+  color: white;
+
+}
+
+.icon-arrow_down--grey:before{
+  font-size: 16px;
+  content: "\e908";
+  color: rgb(200, 200, 200);
+}
+
+
+.icon-bubbles--grey:before{
+  font-size: 16px;
+  content: "\e96f";
+  color: rgb(200, 200, 200);
+}
+
+.icon-clock:before{
+  font-size: 42px;
+  content: "\e90b";
+  color: rgb(200, 200, 200);
+}
+
+.icon-weather:before{
+  font-size: 42px;
+  content: "\e90a";
+  color: rgb(200, 200, 200);
+}
+
+.icon-plus:before{
+  font-size: 16px;
+  content: "\ea0a";
+  color: white;
+}
+
+.icon-search:before{
+  font-size: 14px;
+  content: "\e909";
+  color: rgb(200, 200, 200);
+}
+
+.icon-arrow-right:before{
+  font-size: 14px;
+  content: "\e907";
+  color: rgb( 102, 141, 171 );
+}

@@ -1,0 +1,108 @@
+@import "_variables";
+@import "iconfont.css";
+@import "_mixins";
+
+
+
+
+.account-menu {
+  @include size(8vw, 100vh);
+  @include flex(column, space-between, stretch);
+  height: 100vh;
+  min-height: 600px;
+  min-width: 128px;
+  background: url(../img/aside-bg.png);
+  background-size: contain;
+  padding-top: 0.5rem;
+ 
+  &__top{
+    @include flex(column, start, center);
+  }
+ }
+
+
+.avatar {
+  position: relative;
+  margin-bottom: 0.5rem;
+  align-self: stretch;
+  @include flex(row, space-around, center);
+  
+  &__img {
+  @include size(89px);
+  border-radius: 50%;
+  background: url(../img/avatar.png) center center;
+  }
+
+  &--medium{
+    position: relative;
+    @include size(42px);
+    background: url(../img/avatar.png) center center;
+    border-radius: 50%;
+    
+  }
+
+  &--small{
+  position: relative;
+  @include size(34px);
+  border-radius: 50%;
+  background: url(../img/avatar.png);
+  background-size: contain;
+  margin-right: 5px;
+  }
+}
+
+.dot {
+  @inclcude size(5px);
+  border-radius: 50%;
+  background-color: $grey-89;
+}
+
+.dots {
+  align-self: stretch;
+  padding: 0 35%;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  @include flex(row, space-around, center);
+}
+
+.menu-item{
+  position: relative;
+  @include flex(column, center, center);
+  @include size(100%, 85px);
+
+  &--end{
+    align-self: flex-end;
+  }
+
+  &__title{
+    font: $menu-font;
+    line-height: 2.083;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgb( 0, 0, 0 );
+    font-size: 18px;
+    color: rgba( 120, 120, 120, 0.61);
+    text-shadow: 0px 1px 2px rgb( 0, 0, 0 );
+    
+    &--select {
+      color: white;
+    }
+  } 
+
+  
+  
+  &__v-line {
+    position: absolute;
+    left: 0px;
+    @include size(0.25rem, 85px);
+    background-color: $primery-red;
+    border-radius: 0 0.25rem 0.25rem 0;
+    visibility: hidden;
+  }
+  
+  &__v-line--select {
+    visibility: visible;
+  }
+ 
+
+}
+
