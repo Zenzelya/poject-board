@@ -25,9 +25,17 @@ $ligtn-grey-gr: linear-gradient(97deg, rgb(224, 224, 224) 0%, rgb(224, 224, 224)
 //Font var
 $montserrat_font : "Montserrat";
 $menu-font: "Open Sans";
+$roboto-medium: robotomedium, Tahoma, sans-serif;
+$roboto-regular: robotoregular, Tahoma, sans-serif;
+$roboto-bold: robotobold, Tahoma, sans-serif;
+
+$open-sans-regular: open_sansregular, Tahoma, sans-serif;
 
 // Page var
-$main-font: $montserrat_font;
+$main-font: $roboto-medium;
+$font-line-btn: $roboto-bold;
+$font-line-badge: $open-sans-regular;
+$font-search-input: $open-sans-regular;
 
 $bg-color: $grey-241;
 $online-badge: $light-green;

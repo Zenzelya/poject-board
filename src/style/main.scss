@@ -1,9 +1,12 @@
 @import "_reset";
 @import "_variables";
 @import "iconfont.css";
+@import "roboto.css";
+@import "open-sans.css";
 @import "_mixins";
 @import "_aside";
 @import "_icons";
+
 
 
 
@@ -14,6 +17,9 @@
   box-sizing: border-box;
 }
 
+html {
+	font-family: $main-font;
+}
 
 
 /*
@@ -47,6 +53,7 @@
     color: white;
     border-radius: 50%;
     background-color: $active;
+    font-family: $font-line-badge;
     bottom: 72%;
   
   &--item {
@@ -83,6 +90,7 @@
   
   &__left{
   @include flex(row, start, center);
+
     
 
   }
@@ -150,16 +158,17 @@
   @include flex(row, center, center);
   border: 1px solid rgb(200, 200, 200);
   border-radius: 20px;
-  text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-  color: rgb( 102, 141, 171 );
+  color: rgb( 75, 75, 75 );
   font-size: 14px;
   line-height: 1.429;
+  font-family:  $font-line-btn;
+
   
     
   &__text{
     margin: 0 0.5rem;
     text-transform: uppercase;
-
+		
   }
 
 }
@@ -171,7 +180,10 @@
   &__text{
       display: block;
       padding: 0 20px;
-    }
+			font-family: $main-font;
+  		color: rgb( 75, 75, 75 );
+  		text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
+	}
 
   &__form{
     @include flex(row, start, stretch);
@@ -210,6 +222,7 @@
 }
 
 .input-search{
+	font-family: $font-search-input;
   font-size: 16px;
   text-align: right;
   width: 100%;
@@ -286,6 +299,7 @@
   background-color: $primery-red;
   color: white; 
   border-radius: 5px;
+  font-family: $font-line-badge;
   font-size: 18px;
 
   &__text-small{
@@ -313,6 +327,7 @@
       color: rgb( 38, 79, 111 );
       font-size: 16px;
       height: 100%;
+      font-family: $main-font;
     }
 
     &__start{

@@ -14,6 +14,7 @@
   background: url(../img/aside-bg.png);
   background-size: contain;
   padding-top: 0.5rem;
+  font-family: $main-font;
  
   &__top{
     @include flex(column, start, center);
