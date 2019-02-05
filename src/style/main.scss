@@ -7,397 +7,294 @@
 @import "_aside";
 @import "_icons";
 
-
-
-
-
-
-
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-
 html {
-	font-family: $main-font;
+    font-family: $main-font;
 }
-
-
-/*
-* Third Party
-*/
-
-
-/*
-* Custom
-*/
-
-
 .container {
-  display: inline-flex;
-  width: 100vw;
-  min-height: 600px;
-  background-color: $bg-color;
+    display: inline-flex;
+    width: 100vw;
+    min-height: 600px;
+    background-color: $bg-color;
 }
-
-
 .content {
-  width: calc(100% - 8vw);
-  height: 100vh;
+    width: calc(100% - 8vw);
+    height: 100vh;
 }
-
-
-.badge{
+.badge {
     position: absolute;
     @include size(32px);
-    @include flex(row, center, center);
+    @include flex(row,center,center);
     color: white;
     border-radius: 50%;
     background-color: $active;
     font-family: $font-line-badge;
     bottom: 72%;
-  
-  &--item {
-    background-color: rgb(173, 173, 173);
-  }
-
-  &--user-menu{
-    top: 15% !important;
-    left: 80%;
-  }
-
-  &--right{
-    left: 66%;
-
-  }
-
-  &--small{
-    @include size(12px);
-    top: -2;
-    left: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb( 249, 250, 250 );
-    border-radius: 50%;
-  }
-
+    &--item {
+        background-color: rgb(173,173,173);
+    }
+    &--user-menu {
+        top: 15% !important;
+        left: 80%;
+    }
+    &--right {
+        left: 66%;
+    }
+    &--small {
+        @include size(12px);
+        top: -2;
+        left: 0;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb( 249,250,250 );
+        border-radius: 50%;
+    }
 }
-
 .toolsbar {
-  @include flex(row, space-between, center);
-  height: 70px;
-  padding: 0.5rem 2%;
-  border-bottom: 1px solid rgb(200, 200, 200);
-  
-  &__left{
-  @include flex(row, start, center);
-
-    
-
-  }
-
-  &__right{
-   @include flex(row, end);
-
-  }
-
+    @include flex(row,space-between,center);
+    height: 70px;
+    padding: 0.5rem 2%;
+    border-bottom: 1px solid rgb(200,200,200);
+    &__left {
+        @include flex(row,start,center);
+    }
+    &__right {
+        @include flex(row,end);
+    }
 }
-
-.cirlle-btn{
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  background-color: $active;
-  @include flex(row, center, center);
-  
-  &--text{
-    margin: 0 5px 0 0 !important;
-    text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-    color: rgb( 141, 165, 182 );
-    font-size: 12px;
-    font-weight: bold;
-
-
-  }
-
-  &--list-item{
-    background-color: transparent;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba( 164, 164, 164, 0.63);
-    box-shadow: 0px 1px 0px 0px rgb( 255, 255, 255 );
-    @include size(32px);
-    margin-right: 0;
-    cursor: pointer;
-
-  }
-
-  &--list-item:hover{
-    background-color: $active;
-    cursor: pointer;
-  }
-  &-list-item{
-    background-color: $active;
-    
-
-  }
-
-  &--xl {
-    @include size(42px);
-
-  }
-
-  &--success {
-    background-color: $light-green !important;
-
-  }
-
-
-}
-
-.line-btn{
-  padding: 5px 15px;
-  @include flex(row, center, center);
-  border: 1px solid rgb(200, 200, 200);
-  border-radius: 20px;
-  color: rgb( 75, 75, 75 );
-  font-size: 14px;
-  line-height: 1.429;
-  font-family:  $font-line-btn;
-
-  
-    
-  &__text{
+.cirlle-btn {
     margin: 0 0.5rem;
-    text-transform: uppercase;
-		
-  }
-
-}
-
-.user-menu{
-  @include flex(row, start, stretch);
-  height: 80px;
-
-  &__text{
-      display: block;
-      padding: 0 20px;
-			font-family: $main-font;
-  		color: rgb( 75, 75, 75 );
-  		text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-	}
-
-  &__form{
-    @include flex(row, start, stretch);
-    width: calc(100% - 600px);
-    align-self: stretch;
-    border-bottom: 1px solid rgb(200, 200, 200);
-    &--user-search{
-      width: calc(100% - 350px);
-      border: none;
-
+    border-radius: 50%;
+    background-color: $active;
+    @include flex(row,center,center);
+    &--text {
+        margin: 0 5px 0 0 !important;
+        text-shadow: 0px 1px 2px rgb( 255,255,255 );
+        color: rgb( 141,165,182 );
+        font-size: 12px;
+        font-weight: bold;
     }
-  }
-
-  &__item {
-    width: 300px;
-    // height: 100%;
-    padding-left: 2rem;
-    position: relative;
-    border: 1px solid rgb(200, 200, 200);
-    border-top: none;
-    @include flex(row, start, center);
-
-
-    &--select{
-      background-color: white;
-      border:none;
+    &--list-item {
+        background-color: transparent;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba( 164,164,164,0.63);
+        box-shadow: 0px 1px 0px 0px rgb( 255,255,255 );
+        @include size(32px);
+        margin-right: 0;
+        cursor: pointer;
     }
-
-    &--user-menu{
-      margin: 0 auto;
+    &--list-item:hover {
+        background-color: $active;
+        cursor: pointer;
     }
-
-  }
-
-
+    &-list-item {
+        background-color: $active;
+    }
+    &--xl {
+        @include size(42px);
+    }
+    &--success {
+        background-color: $light-green !important;
+    }
 }
-
-.input-search{
-	font-family: $font-search-input;
-  font-size: 16px;
-  text-align: right;
-  width: 100%;
- // height: 100%;
-  border: none;
-  background-color: transparent;
-  padding-right: 4rem;
-
-  &--control{
-    text-align: left !important;
-    padding-left: 2%;
-
-  }
-}
-
-.main-content{
-  @include flex(row, space-between, stretch);
-  background-color: white;
-  padding: 1rem 2rem;
-  height: calc(100vh - 160px);
-  
-  &__project-side{
-    position: relative;
-    @include flex(column, start, stretch);
-    width: 65%;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 5px;
-
-  }
-
-  &__workers-side{
-    @include flex(column, start, stretch);
-    width: 34%;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 5px;
-
-  }
-}
-
-.controle-panel{
-  @include flex(row, space-between, stretch);
-  height: 80px !important;
-  border-bottom: 1px solid rgb(200, 200, 200);
-
-  &__right{
-    position: relative;
-    height: 80px;
-    @include flex(row, end, center);
-    
-  }
-}
-
-.project-list{
-  @include flex(column, start, stretch);
-  width: 100%;
-  overflow-y: scroll;
-  
-  &::-webkit-scrollbar {
-  	width: 7px;
-    
-  }
-
-  &::-webkit-scrollbar-thumb{
-    height: 25px;
-    border-radius: 6px;
-    background-color: #ccc;	
-  }
-}
-
-.line-badge{
-  @include flex(row, center, center);
-  width: 58px;
-  height: 33px;
-  background-color: $primery-red;
-  color: white; 
-  border-radius: 5px;
-  font-family: $font-line-badge;
-  font-size: 18px;
-
-  &__text-small{
+.line-btn {
+    padding: 5px 15px;
+    @include flex(row,center,center);
+    border: 1px solid rgb(200,200,200);
+    border-radius: 20px;
+    color: rgb( 75,75,75 );
     font-size: 14px;
-  }
-
-  &--select{
-    background-color: transparent !important;
-    border: 1px solid rgb(200, 200, 200);
-    color: rgb(200, 200, 200);
-  }
+    line-height: 1.429;
+    font-family: $font-line-btn;
+    &__text {
+        margin: 0 0.5rem;
+        text-transform: uppercase;
+    }
 }
-.list-item{
-    @include flex(row, space-between, center);
+.user-menu {
+    @include flex(row,start,stretch);
+    height: 80px;
+    &__text {
+        display: block;
+        padding: 0 20px;
+        font-family: $main-font;
+        color: rgb( 75,75,75 );
+        text-shadow: 0px 1px 2px rgb( 255,255,255 );
+    }
+    &__form {
+        @include flex(row,start,stretch);
+        width: calc(100% - 600px);
+        align-self: stretch;
+        border-bottom: 1px solid rgb(200,200,200);
+        &--user-search {
+            width: calc(100% - 350px);
+            border: none;
+        }
+    }
+    &__item {
+        width: 300px;
+        // height: 100%;
+        padding-left: 2rem;
+        position: relative;
+        border: 1px solid rgb(200,200,200);
+        border-top: none;
+        @include flex(row,start,center);
+        &--select {
+            background-color: white;
+            border: none;
+        }
+        &--user-menu {
+            margin: 0 auto;
+        }
+    }
+}
+.input-search {
+    font-family: $font-search-input;
+    font-size: 16px;
+    text-align: right;
+    width: 100%;
+    // height: 100%;
+    border: none;
+    background-color: transparent;
+    padding-right: 4rem;
+    &--control {
+        text-align: left !important;
+        padding-left: 2%;
+    }
+}
+.main-content {
+    @include flex(row,space-between,stretch);
+    background-color: white;
+    padding: 1rem 2rem;
+    height: calc(100vh - 160px);
+    &__project-side {
+        position: relative;
+        @include flex(column,start,stretch);
+        width: 65%;
+        border: 1px solid rgb(200,200,200);
+        border-radius: 5px;
+    }
+    &__workers-side {
+        @include flex(column,start,stretch);
+        width: 34%;
+        border: 1px solid rgb(200,200,200);
+        border-radius: 5px;
+    }
+}
+.controle-panel {
+    @include flex(row,space-between,stretch);
+    height: 80px !important;
+    border-bottom: 1px solid rgb(200,200,200);
+    &__right {
+        position: relative;
+        height: 80px;
+        @include flex(row,end,center);
+    }
+}
+.project-list {
+    @include flex(column,start,stretch);
+    width: 100%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 25px;
+        border-radius: 6px;
+        background-color: #ccc;
+    }
+}
+.line-badge {
+    @include flex(row,center,center);
+    width: 58px;
+    height: 33px;
+    background-color: $primery-red;
+    color: white;
+    border-radius: 5px;
+    font-family: $font-line-badge;
+    font-size: 18px;
+    &__text-small {
+        font-size: 14px;
+    }
+    &--select {
+        background-color: transparent !important;
+        border: 1px solid rgb(200,200,200);
+        color: rgb(200,200,200);
+    }
+}
+.list-item {
+    @include flex(row,space-between,center);
     padding: 0 0.5rem;
     min-height: 80px;
-    border-bottom: 1px solid rgb(200, 200, 200);
-
-    &--select{
-      background: rgba(241, 241, 241, 0.9);
+    border-bottom: 1px solid rgb(200,200,200);
+    &--select {
+        background: rgba(241,241,241,0.9);
     }
-    &__name{
-      padding-left: 2%;
-      text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-      color: rgb( 38, 79, 111 );
-      font-size: 16px;
-      height: 100%;
-      font-family: $main-font;
+    &__name {
+        padding-left: 2%;
+        text-shadow: 0px 1px 2px rgb( 255,255,255 );
+        color: rgb( 38,79,111 );
+        font-size: 16px;
+        height: 100%;
+        font-family: $main-font;
     }
-
-    &__start{
-      @include flex(row, start, center);
-      width: 45%;
-
+    &__start {
+        @include flex(row,start,center);
+        width: 45%;
     }
-
-    &__end{
-     @include flex(row, end, center);
-
+    &__end {
+        @include flex(row,end,center);
     }
-  }
-
-.workers-list{
-  @include flex(column, start, stretch);
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-  	width: 7px;
-    
-  }
-
-  &::-webkit-scrollbar-thumb{
-    height: 20px;
-    border-radius: 6px;
-    background-color: #ccc;	
-  }
-
 }
-
-.workers-item{
-  @include flex(row, start, center);
-  padding-left: 2rem;
-  height: 80px;
-  border-bottom: 1px solid rgb(200, 200, 200);
-
-  &__action{
-    color: rgb( 75, 75, 75 );
-    font-size: 18px;
-    text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-
-  }
-
-  &__date{
-    display: block;
-    margin-top: 0.5rem;
-    text-transform: uppercase;
-    line-height: 1.429;
-    text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-    color: rgba( 141, 165, 182, 0.702 );
-    font-size: 14px;
-  }
-  
+.workers-list {
+    @include flex(column,start,stretch);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 20px;
+        border-radius: 6px;
+        background-color: #ccc;
+    }
 }
-
-.workers-item__description{
-  @include flex(column, center, start);
-  height: 80px;
-  padding-left: 0.4rem;
+.workers-item {
+    @include flex(row,start,center);
+    padding-left: 2rem;
+    height: 80px;
+    border-bottom: 1px solid rgb(200,200,200);
+    &__action {
+        color: rgb( 75,75,75 );
+        font-size: 18px;
+        text-shadow: 0px 1px 2px rgb( 255,255,255 );
+    }
+    &__date {
+        display: block;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-shadow: 0px 1px 2px rgb( 255,255,255 );
+        color: rgba( 141,165,182,0.702 );
+        font-size: 14px;
+    }
 }
-
+.workers-item__description {
+    @include flex(column,center,start);
+    height: 80px;
+    padding-left: 0.4rem;
+}
 .project-acchiv {
-  @include flex(row, start, center);
-  height: 52px;
-  text-shadow: 0px 1px 2px rgb( 255, 255, 255 );
-  color: rgb( 102, 141, 171 );
-  font-size: 14px;
-  padding-left: 0.5rem;
-  background-color: #fff;
-  width: 100%;
-  border-top: 1px solid rgb(200, 200, 200);
-  margin-right: 3px;
+    @include flex(row,start,center);
+    height: 52px;
+    text-shadow: 0px 1px 2px rgb( 255,255,255 );
+    color: rgb( 102,141,171 );
+    font-size: 14px;
+    padding-left: 0.5rem;
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid rgb(200,200,200);
+    margin-right: 3px;
 }
